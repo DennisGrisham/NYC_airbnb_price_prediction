@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/c3436786f77340ebb7172e39972a9196/artifacts
+end_time: 1754496696368
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c3436786f77340ebb7172e39972a9196
+run_name: monumental-toad-666
+run_uuid: c3436786f77340ebb7172e39972a9196
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754496676517
+status: 3
+tags: []
+user_id: dennis-grisham

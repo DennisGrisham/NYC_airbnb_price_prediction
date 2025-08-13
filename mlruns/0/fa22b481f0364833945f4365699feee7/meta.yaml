@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/fa22b481f0364833945f4365699feee7/artifacts
+end_time: 1754533637925
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa22b481f0364833945f4365699feee7
+run_name: traveling-foal-255
+run_uuid: fa22b481f0364833945f4365699feee7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754533637903
+status: 4
+tags: []
+user_id: dennis-grisham

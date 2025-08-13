@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/c6cc63b9cbbd451d9c479fb92ce09e74/artifacts
+end_time: 1754531463915
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c6cc63b9cbbd451d9c479fb92ce09e74
+run_name: hilarious-owl-262
+run_uuid: c6cc63b9cbbd451d9c479fb92ce09e74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754531461197
+status: 4
+tags: []
+user_id: dennis-grisham

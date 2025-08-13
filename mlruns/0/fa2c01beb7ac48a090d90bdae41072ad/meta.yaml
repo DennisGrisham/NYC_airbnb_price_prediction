@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/fa2c01beb7ac48a090d90bdae41072ad/artifacts
+end_time: 1754441933885
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa2c01beb7ac48a090d90bdae41072ad
+run_name: useful-asp-108
+run_uuid: fa2c01beb7ac48a090d90bdae41072ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754441933026
+status: 4
+tags: []
+user_id: dennis-grisham

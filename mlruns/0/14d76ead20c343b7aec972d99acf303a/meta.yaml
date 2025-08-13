@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/14d76ead20c343b7aec972d99acf303a/artifacts
+end_time: 1754357648282
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 14d76ead20c343b7aec972d99acf303a
+run_name: marvelous-kite-88
+run_uuid: 14d76ead20c343b7aec972d99acf303a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754357627893
+status: 3
+tags: []
+user_id: dennis-grisham

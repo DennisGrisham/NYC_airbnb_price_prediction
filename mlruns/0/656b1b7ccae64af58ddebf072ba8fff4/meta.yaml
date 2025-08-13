@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/656b1b7ccae64af58ddebf072ba8fff4/artifacts
+end_time: 1754537821135
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 656b1b7ccae64af58ddebf072ba8fff4
+run_name: trusting-fox-535
+run_uuid: 656b1b7ccae64af58ddebf072ba8fff4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754537818450
+status: 3
+tags: []
+user_id: dennis-grisham

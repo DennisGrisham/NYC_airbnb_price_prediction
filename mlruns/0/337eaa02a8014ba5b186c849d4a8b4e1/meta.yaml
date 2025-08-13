@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/337eaa02a8014ba5b186c849d4a8b4e1/artifacts
+end_time: 1754444290327
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 337eaa02a8014ba5b186c849d4a8b4e1
+run_name: useful-quail-695
+run_uuid: 337eaa02a8014ba5b186c849d4a8b4e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754444289515
+status: 3
+tags: []
+user_id: dennis-grisham

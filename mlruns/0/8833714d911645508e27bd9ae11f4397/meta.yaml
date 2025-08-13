@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/8833714d911645508e27bd9ae11f4397/artifacts
+end_time: 1754444895746
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8833714d911645508e27bd9ae11f4397
+run_name: adorable-lamb-16
+run_uuid: 8833714d911645508e27bd9ae11f4397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754444874541
+status: 3
+tags: []
+user_id: dennis-grisham

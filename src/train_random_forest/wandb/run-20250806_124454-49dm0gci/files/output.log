@@ -1,0 +1,15 @@
+2025-08-06 12:44:56,262 [DEBUG] Training run_id: 4d2532de1cd74ec6b9ba87370071596b
+2025-08-06 12:44:56,263 [DEBUG] Using outputs directory: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+2025-08-06 12:44:56,263 [DEBUG] Saved params.json to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+2025-08-06 12:44:56,264 [DEBUG] Saved rf_config.json to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/rf_config.json
+2025-08-06 12:44:56,264 [DEBUG] Using training artifact: clean_sample.csv:latest
+2025-08-06 12:44:57,165 [DEBUG] Local training file path: ./artifacts/clean_sample.csv:latest/clean_sample.csv
+2025-08-06 12:44:57,201 Minimum price: 10, Maximum price: 350
+2025-08-06 12:44:57,216 Preparing sklearn pipeline
+2025-08-06 12:44:57,216 Fitting model...
+2025-08-06 12:44:57,884 Score: 0.571921195507114, MAE: 33.446929107789714
+2025/08/06 12:44:57 WARNING mlflow.models.signature: Failed to infer the model signature from the input example. Reason: MlflowException("Unable to map 'object' type to MLflow DataType. object can be mapped iff all values have identical data type which is one of (string, (bytes or byterray),  int, float)."). To see the full traceback, set the logging level to DEBUG via `logging.getLogger("mlflow").setLevel(logging.DEBUG)`. To disable automatic signature inference, set `signature` to `False` in your `log_model` or `save_model` call.
+/home/dennis-grisham/miniconda3/envs/mlflow-d20df18b17b0c54747eba2677649d2bbc0879a75/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+2025-08-06 12:44:59,158 [DEBUG] Model artifact folder confirmed: artifacts/random_forest_model_20250806_124457
+[34m[1mwandb[39m[22m: Adding directory to artifact (./artifacts/random_forest_model_20250806_124457)... Done. 0.1s

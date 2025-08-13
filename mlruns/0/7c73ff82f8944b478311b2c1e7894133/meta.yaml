@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/7c73ff82f8944b478311b2c1e7894133/artifacts
+end_time: 1754512666615
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c73ff82f8944b478311b2c1e7894133
+run_name: welcoming-snipe-80
+run_uuid: 7c73ff82f8944b478311b2c1e7894133
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754512665750
+status: 3
+tags: []
+user_id: dennis-grisham

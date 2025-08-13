@@ -1,0 +1,48 @@
+
+[INFO] Loading model from: models:/nyc_airbnb_random_forest/5
+2025/08/10 12:52:35 WARNING mlflow.pyfunc: Detected one or more mismatches between the model's dependencies and the current Python environment:
+ - scikit-learn (current: 1.7.1, required: scikit-learn==1.5.2)
+ - scipy (current: 1.15.3, required: scipy==1.15.2)
+To fix the mismatches, call `mlflow.pyfunc.get_model_dependencies(model_uri)` to fetch the model's environment and install dependencies using the resulting environment file.
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator OrdinalEncoder from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator SimpleImputer from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator OneHotEncoder from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator FunctionTransformer from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.5.2 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/test_registered.py", line 58, in <module>
+    main(args)
+  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/test_registered.py", line 23, in main
+    model = mlflow.pyfunc.load_model(model_uri)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/pyfunc/__init__.py", line 679, in load_model
+    model_impl = importlib.import_module(conf[MAIN])._load_pyfunc(data_path)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 497, in _load_pyfunc
+    _load_model_from_local_file(path=path, serialization_format=serialization_format)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 454, in _load_model_from_local_file
+    return cloudpickle.load(f)
+AttributeError: Can't get attribute '_RemainderColsList' on <module 'sklearn.compose._column_transformer' from '/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py'>
+Traceback (most recent call last):
+  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/test_registered.py", line 58, in <module>
+    main(args)
+  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/test_registered.py", line 23, in main
+    model = mlflow.pyfunc.load_model(model_uri)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/pyfunc/__init__.py", line 679, in load_model
+    model_impl = importlib.import_module(conf[MAIN])._load_pyfunc(data_path)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 497, in _load_pyfunc
+    _load_model_from_local_file(path=path, serialization_format=serialization_format)
+  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 454, in _load_model_from_local_file
+    return cloudpickle.load(f)
+AttributeError: Can't get attribute '_RemainderColsList' on <module 'sklearn.compose._column_transformer' from '/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py'>

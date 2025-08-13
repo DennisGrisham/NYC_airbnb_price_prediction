@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/46e34cc7c8b947c8b85eb9871ce65d9e/artifacts
+end_time: 1754356009939
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 46e34cc7c8b947c8b85eb9871ce65d9e
+run_name: thoughtful-wolf-255
+run_uuid: 46e34cc7c8b947c8b85eb9871ce65d9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754355974405
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/f05e2a78fa924ac088784eb588e6facf/artifacts
+end_time: 1754506884106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f05e2a78fa924ac088784eb588e6facf
+run_name: bittersweet-bird-594
+run_uuid: f05e2a78fa924ac088784eb588e6facf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754506866522
+status: 3
+tags: []
+user_id: dennis-grisham

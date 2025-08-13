@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/1ffa936ffd3645cbb70d72b373adef7e/artifacts
+end_time: 1754242212671
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ffa936ffd3645cbb70d72b373adef7e
+run_name: vaunted-hound-245
+run_uuid: 1ffa936ffd3645cbb70d72b373adef7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754242202547
+status: 3
+tags: []
+user_id: dennis-grisham

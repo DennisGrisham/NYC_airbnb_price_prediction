@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/5dd50b2cf37d4bf88935fa37d8c281bf/artifacts
+end_time: 1754439404476
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5dd50b2cf37d4bf88935fa37d8c281bf
+run_name: salty-moth-94
+run_uuid: 5dd50b2cf37d4bf88935fa37d8c281bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754439385286
+status: 4
+tags: []
+user_id: dennis-grisham

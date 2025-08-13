@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/a8aaab6ddea04ad7950815fa13936123/artifacts
+end_time: 1754273336212
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a8aaab6ddea04ad7950815fa13936123
+run_name: fearless-rook-530
+run_uuid: a8aaab6ddea04ad7950815fa13936123
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754273333665
+status: 4
+tags: []
+user_id: dennis-grisham

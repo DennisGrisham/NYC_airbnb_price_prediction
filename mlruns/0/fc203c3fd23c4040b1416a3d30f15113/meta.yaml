@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/fc203c3fd23c4040b1416a3d30f15113/artifacts
+end_time: 1754491947654
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fc203c3fd23c4040b1416a3d30f15113
+run_name: powerful-newt-270
+run_uuid: fc203c3fd23c4040b1416a3d30f15113
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754491946534
+status: 4
+tags: []
+user_id: dennis-grisham

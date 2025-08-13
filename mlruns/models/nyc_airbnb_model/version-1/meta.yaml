@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754359334362
+current_stage: None
+description: null
+last_updated_timestamp: 1754359334362
+name: nyc_airbnb_model
+run_id: 9dfff7a60bf94d35affe56e93e28d254
+run_link: null
+source: runs:/9dfff7a60bf94d35affe56e93e28d254/random_forest_model
+status: READY
+status_message: null
+storage_location: runs:/9dfff7a60bf94d35affe56e93e28d254/random_forest_model
+user_id: null
+version: 1

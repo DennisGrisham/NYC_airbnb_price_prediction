@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/4c8b32012ba4462b812e7ebeab3ee616/artifacts
+end_time: 1754534617250
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4c8b32012ba4462b812e7ebeab3ee616
+run_name: sneaky-owl-32
+run_uuid: 4c8b32012ba4462b812e7ebeab3ee616
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754534614618
+status: 3
+tags: []
+user_id: dennis-grisham

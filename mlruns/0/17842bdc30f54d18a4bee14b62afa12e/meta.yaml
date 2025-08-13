@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/17842bdc30f54d18a4bee14b62afa12e/artifacts
+end_time: 1754490431234
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 17842bdc30f54d18a4bee14b62afa12e
+run_name: adventurous-loon-506
+run_uuid: 17842bdc30f54d18a4bee14b62afa12e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754490410222
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/dd81d2d138124f81b48bcbac2707693e/artifacts
+end_time: 1754243172944
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd81d2d138124f81b48bcbac2707693e
+run_name: intrigued-flea-119
+run_uuid: dd81d2d138124f81b48bcbac2707693e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754243162459
+status: 3
+tags: []
+user_id: dennis-grisham

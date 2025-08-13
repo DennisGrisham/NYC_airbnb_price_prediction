@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/f5e549dd628243fb800e65581475f07a/artifacts
+end_time: 1754361161914
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f5e549dd628243fb800e65581475f07a
+run_name: loud-gnu-345
+run_uuid: f5e549dd628243fb800e65581475f07a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754361144385
+status: 3
+tags: []
+user_id: dennis-grisham

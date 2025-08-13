@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/b448ade0ff2c4fd2a07b84a6c4d59fca/artifacts
+end_time: 1754508240689
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b448ade0ff2c4fd2a07b84a6c4d59fca
+run_name: rumbling-gnu-11
+run_uuid: b448ade0ff2c4fd2a07b84a6c4d59fca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754508220628
+status: 3
+tags: []
+user_id: dennis-grisham

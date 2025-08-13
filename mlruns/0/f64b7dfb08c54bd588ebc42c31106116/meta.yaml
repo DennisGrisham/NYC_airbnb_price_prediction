@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/f64b7dfb08c54bd588ebc42c31106116/artifacts
+end_time: 1754361162037
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f64b7dfb08c54bd588ebc42c31106116
+run_name: wise-duck-831
+run_uuid: f64b7dfb08c54bd588ebc42c31106116
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754361141805
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/9df30f16b1c24135b0c90f39a472688b/artifacts
+end_time: 1754362099946
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9df30f16b1c24135b0c90f39a472688b
+run_name: able-boar-850
+run_uuid: 9df30f16b1c24135b0c90f39a472688b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754362081980
+status: 3
+tags: []
+user_id: dennis-grisham

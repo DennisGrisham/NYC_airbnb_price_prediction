@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/fbce6841d0d5414989d7f957d467fcb5/artifacts
+end_time: 1754278857525
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fbce6841d0d5414989d7f957d467fcb5
+run_name: overjoyed-bear-902
+run_uuid: fbce6841d0d5414989d7f957d467fcb5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754278845711
+status: 4
+tags: []
+user_id: dennis-grisham

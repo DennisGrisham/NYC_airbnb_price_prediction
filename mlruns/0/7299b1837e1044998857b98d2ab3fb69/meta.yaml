@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/7299b1837e1044998857b98d2ab3fb69/artifacts
+end_time: 1754249398690
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7299b1837e1044998857b98d2ab3fb69
+run_name: respected-hawk-210
+run_uuid: 7299b1837e1044998857b98d2ab3fb69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754249388149
+status: 3
+tags: []
+user_id: dennis-grisham

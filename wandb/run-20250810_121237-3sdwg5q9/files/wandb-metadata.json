@@ -1,0 +1,108 @@
+{
+    "os": "Linux-6.14.0-27-generic-x86_64-with-glibc2.39",
+    "python": "3.10.18",
+    "heartbeatAt": "2025-08-10T17:12:38.544208",
+    "startedAt": "2025-08-10T17:12:37.697276",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/get_clean_from_wandb.py",
+    "codePathLocal": "scripts/get_clean_from_wandb.py",
+    "codePath": "scripts/get_clean_from_wandb.py",
+    "git": {
+        "remote": "https://github.com/DennisGrisham/NYC_airbnb_price_prediction.git",
+        "commit": "851ba1c92b0bc5d9091c41e26709759f5f7e4626"
+    },
+    "email": "dgrish1@wgu.edu",
+    "root": "/home/dennis-grisham/D501_Project_1_NYC_Airbnb",
+    "host": "dennis-grisham-GE75-Raider-10SE",
+    "username": "dennis-grisham",
+    "executable": "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3522.182083333333,
+        "min": 800.0,
+        "max": 5000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4300.064,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4629.385,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.109,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4299.969,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4687.935,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4701.178,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4301.809,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4299.996,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4299.985,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4300.742,
+            "min": 800.0,
+            "max": 5000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 91.11075210571289,
+            "used": 41.910491943359375
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.09908676147461
+    }
+}

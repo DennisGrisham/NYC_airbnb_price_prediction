@@ -1,0 +1,6 @@
+{
+  "clean_data_path": "outputs/clean_sampled.parquet",
+  "test_size": 0.2,
+  "random_state": 42,
+  "target": "price"
+}

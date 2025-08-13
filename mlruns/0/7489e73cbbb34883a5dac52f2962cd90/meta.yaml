@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/7489e73cbbb34883a5dac52f2962cd90/artifacts
+end_time: 1754444013912
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7489e73cbbb34883a5dac52f2962cd90
+run_name: overjoyed-pug-68
+run_uuid: 7489e73cbbb34883a5dac52f2962cd90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754444013099
+status: 3
+tags: []
+user_id: dennis-grisham

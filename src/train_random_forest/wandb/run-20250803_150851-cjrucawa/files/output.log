@@ -1,0 +1,11 @@
+2025-08-03 15:08:54,284 Minimum price: 10, Maximum price: 350
+2025-08-03 15:08:54,296 Preparing sklearn pipeline
+2025-08-03 15:08:54,296 Fitting
+2025-08-03 15:08:54,903 Scoring
+2025-08-03 15:08:55,001 Score: 0.5714574367167662
+2025-08-03 15:08:55,001 MAE: 33.46325896500654
+2025-08-03 15:08:55,001 Exporting model
+2025/08/03 15:08:55 WARNING mlflow.models.signature: Failed to infer the model signature from the input example. Reason: MlflowException("Unable to map 'object' type to MLflow DataType. object can be mapped iff all values have identical data type which is one of (string, (bytes or byterray),  int, float)."). To see the full traceback, set the logging level to DEBUG via `logging.getLogger("mlflow").setLevel(logging.DEBUG)`. To disable automatic signature inference, set `signature` to `False` in your `log_model` or `save_model` call.
+/home/dennis-grisham/miniconda3/envs/mlflow-d20df18b17b0c54747eba2677649d2bbc0879a75/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+[34m[1mwandb[39m[22m: Adding directory to artifact (./random_forest_dir)... Done. 0.1s

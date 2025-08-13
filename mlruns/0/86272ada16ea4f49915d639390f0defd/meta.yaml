@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/86272ada16ea4f49915d639390f0defd/artifacts
+end_time: 1754273118247
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86272ada16ea4f49915d639390f0defd
+run_name: popular-bass-622
+run_uuid: 86272ada16ea4f49915d639390f0defd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754273100734
+status: 3
+tags: []
+user_id: dennis-grisham

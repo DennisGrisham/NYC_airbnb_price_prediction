@@ -1,0 +1,46 @@
+[2025-08-06 14:05:05,027][__main__][INFO] - 🚀 Starting register_model step...
+[2025-08-06 14:05:05,028][__main__][INFO] - [DEBUG] Project root resolved as: /home/dennis-grisham/D501_Project_1_NYC_Airbnb
+[2025-08-06 14:05:05,028][__main__][INFO] - [DEBUG] Looking for outputs directory at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+[2025-08-06 14:05:05,028][__main__][INFO] - [DEBUG] Expecting params.json at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+[2025-08-06 14:05:05,028][__main__][INFO] - ✅ Found params.json! Printing contents:
+[2025-08-06 14:05:05,028][__main__][INFO] - {"trained_model_run_id": "4a34b2f1f6da4694809e394d0cc5a991"}
+[2025-08-06 14:05:05,028][__main__][INFO] - [DEBUG] Using trained_model_run_id: 4a34b2f1f6da4694809e394d0cc5a991
+[2025-08-06 14:05:05,034][__main__][WARNING] - Could not fetch latest model version info: Registered Model with name=nyc_airbnb_random_forest not found
+[2025-08-06 14:05:05,036][__main__][ERROR] - ❌ No model artifact folder found for run.
+[2025-08-06 14:24:00,466][__main__][INFO] - 🚀 Starting register_model step...
+[2025-08-06 14:24:00,466][__main__][INFO] - [DEBUG] Project root resolved as: /home/dennis-grisham/D501_Project_1_NYC_Airbnb
+[2025-08-06 14:24:00,466][__main__][INFO] - [DEBUG] Looking for outputs directory at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+[2025-08-06 14:24:00,466][__main__][INFO] - [DEBUG] Expecting params.json at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+[2025-08-06 14:24:00,466][__main__][INFO] - ✅ Found params.json! Printing contents:
+[2025-08-06 14:24:00,466][__main__][INFO] - {"trained_model_run_id": "fe1141b1959544f380b7895f12c2b62f"}
+[2025-08-06 14:24:00,466][__main__][INFO] - [DEBUG] Using trained_model_run_id: fe1141b1959544f380b7895f12c2b62f
+[2025-08-06 14:24:00,470][__main__][WARNING] - Could not fetch latest model version info: Registered Model with name=nyc_airbnb_random_forest not found
+[2025-08-06 14:24:00,472][__main__][ERROR] - ❌ No model artifact folder found for run.
+[2025-08-06 15:21:17,957][__main__][INFO] - 🚀 Starting register_model step...
+[2025-08-06 15:21:17,957][__main__][INFO] - [DEBUG] Project root resolved as: /home/dennis-grisham/D501_Project_1_NYC_Airbnb
+[2025-08-06 15:21:17,957][__main__][INFO] - [DEBUG] Looking for outputs directory at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+[2025-08-06 15:21:17,957][__main__][INFO] - [DEBUG] Expecting params.json at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+[2025-08-06 15:21:17,957][__main__][INFO] - ✅ Found params.json! Printing contents:
+[2025-08-06 15:21:17,957][__main__][INFO] - {"trained_model_run_id": "4a97894c8ebb4be7bc4cf8e0e56b94a2"}
+[2025-08-06 15:21:17,957][__main__][INFO] - [DEBUG] Using trained_model_run_id: 4a97894c8ebb4be7bc4cf8e0e56b94a2
+[2025-08-06 15:21:17,961][__main__][WARNING] - Could not fetch latest model version info: Registered Model with name=nyc_airbnb_random_forest not found
+[2025-08-06 15:21:17,963][__main__][INFO] - [DEBUG] Model URI to register: runs:/4a97894c8ebb4be7bc4cf8e0e56b94a2/random_forest_model_20250806_152101
+[2025-08-06 15:21:17,965][__main__][INFO] - ✅ Registered new model version: 1
+[2025-08-06 15:37:46,505][__main__][INFO] - 🚀 Starting register_model step...
+[2025-08-06 15:37:46,506][__main__][INFO] - [DEBUG] Project root resolved as: /home/dennis-grisham/D501_Project_1_NYC_Airbnb
+[2025-08-06 15:37:46,506][__main__][INFO] - [DEBUG] Looking for outputs directory at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+[2025-08-06 15:37:46,506][__main__][INFO] - [DEBUG] Expecting params.json at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+[2025-08-06 15:37:46,506][__main__][INFO] - ✅ Found params.json! Printing contents:
+[2025-08-06 15:37:46,506][__main__][INFO] - {"trained_model_run_id": "0240603e9517416fa11a5ef012a2791d"}
+[2025-08-06 15:37:46,506][__main__][INFO] - [DEBUG] Using trained_model_run_id: 0240603e9517416fa11a5ef012a2791d
+[2025-08-06 15:37:46,512][__main__][INFO] - [DEBUG] Model URI to register: runs:/0240603e9517416fa11a5ef012a2791d/random_forest_model_20250806_153638
+[2025-08-06 15:37:46,515][__main__][INFO] - ✅ Registered new model version: 2
+[2025-08-10 12:31:09,564][__main__][INFO] - 🚀 Starting register_model step...
+[2025-08-10 12:31:09,564][__main__][INFO] - [DEBUG] Project root resolved as: /home/dennis-grisham/D501_Project_1_NYC_Airbnb
+[2025-08-10 12:31:09,564][__main__][INFO] - [DEBUG] Looking for outputs directory at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs
+[2025-08-10 12:31:09,564][__main__][INFO] - [DEBUG] Expecting params.json at: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/params.json
+[2025-08-10 12:31:09,564][__main__][INFO] - ✅ Found params.json! Printing contents:
+[2025-08-10 12:31:09,565][__main__][INFO] - {"trained_model_run_id": "bb15c80e4ed244ca98336e9d2703fc66"}
+[2025-08-10 12:31:09,565][__main__][INFO] - [DEBUG] Using trained_model_run_id: bb15c80e4ed244ca98336e9d2703fc66
+[2025-08-10 12:31:09,572][__main__][INFO] - [DEBUG] Model URI to register: runs:/bb15c80e4ed244ca98336e9d2703fc66/random_forest_model_20250810_123059
+[2025-08-10 12:31:09,576][__main__][INFO] - ✅ Registered new model version: 5

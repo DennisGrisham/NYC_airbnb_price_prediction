@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/6cd787c1e6184fb58cacd502271ee646/artifacts
+end_time: 1754357411080
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6cd787c1e6184fb58cacd502271ee646
+run_name: casual-panda-441
+run_uuid: 6cd787c1e6184fb58cacd502271ee646
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754357392862
+status: 3
+tags: []
+user_id: dennis-grisham

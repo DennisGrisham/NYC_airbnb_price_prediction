@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/51dc9f14b6b341a6b8b71711f95660d7/artifacts
+end_time: 1754536202613
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 51dc9f14b6b341a6b8b71711f95660d7
+run_name: peaceful-cow-894
+run_uuid: 51dc9f14b6b341a6b8b71711f95660d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754536199837
+status: 3
+tags: []
+user_id: dennis-grisham

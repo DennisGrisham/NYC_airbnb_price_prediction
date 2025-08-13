@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/6d9afec0198a4ad4988f79156177282e/artifacts
+end_time: 1754844865206
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d9afec0198a4ad4988f79156177282e
+run_name: dashing-swan-818
+run_uuid: 6d9afec0198a4ad4988f79156177282e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754844859851
+status: 3
+tags: []
+user_id: dennis-grisham

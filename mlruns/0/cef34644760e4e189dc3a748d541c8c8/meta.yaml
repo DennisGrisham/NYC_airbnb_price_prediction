@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/cef34644760e4e189dc3a748d541c8c8/artifacts
+end_time: 1754280409348
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cef34644760e4e189dc3a748d541c8c8
+run_name: gaudy-crow-87
+run_uuid: cef34644760e4e189dc3a748d541c8c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754280391893
+status: 3
+tags: []
+user_id: dennis-grisham

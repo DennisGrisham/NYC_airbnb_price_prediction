@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/5ced9e72abf742299edf5be74b246cca/artifacts
+end_time: 1754362347879
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5ced9e72abf742299edf5be74b246cca
+run_name: honorable-auk-557
+run_uuid: 5ced9e72abf742299edf5be74b246cca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754362326900
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/9a8084dfc8944e378c7110055e82f0ff/artifacts
+end_time: 1754241465160
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9a8084dfc8944e378c7110055e82f0ff
+run_name: brawny-ant-376
+run_uuid: 9a8084dfc8944e378c7110055e82f0ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754241448889
+status: 4
+tags: []
+user_id: dennis-grisham

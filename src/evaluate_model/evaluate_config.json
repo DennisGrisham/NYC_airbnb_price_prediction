@@ -1,0 +1,6 @@
+{
+  "test_data_path": "../../outputs/test_data.parquet",
+  "model_name": "nyc_airbnb_random_forest",
+  "stage": "Staging",
+  "wandb_project": "nyc_airbnb_dev"
+}

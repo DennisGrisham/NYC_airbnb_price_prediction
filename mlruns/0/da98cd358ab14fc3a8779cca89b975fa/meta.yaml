@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/da98cd358ab14fc3a8779cca89b975fa/artifacts
+end_time: 1754532136389
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da98cd358ab14fc3a8779cca89b975fa
+run_name: omniscient-smelt-357
+run_uuid: da98cd358ab14fc3a8779cca89b975fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754532133120
+status: 4
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,8 @@
+name: evaluate_model
+
+entry_points:
+  main:
+    parameters:
+      config: {type: str, default: "evaluate_config.json"}
+    command: >
+      python run.py --config {config}

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/667220c8e6d34ce1a804cbb8c21b6cc5/artifacts
+end_time: 1754363035229
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 667220c8e6d34ce1a804cbb8c21b6cc5
+run_name: calm-shoat-593
+run_uuid: 667220c8e6d34ce1a804cbb8c21b6cc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754363018513
+status: 3
+tags: []
+user_id: dennis-grisham

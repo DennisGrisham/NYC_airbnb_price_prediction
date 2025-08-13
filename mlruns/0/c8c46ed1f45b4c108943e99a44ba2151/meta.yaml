@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/c8c46ed1f45b4c108943e99a44ba2151/artifacts
+end_time: 1754280186520
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c8c46ed1f45b4c108943e99a44ba2151
+run_name: enthused-ray-140
+run_uuid: c8c46ed1f45b4c108943e99a44ba2151
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754280181882
+status: 4
+tags: []
+user_id: dennis-grisham

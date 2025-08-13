@@ -1,0 +1,214 @@
+2025-08-06 09:46:33,889 INFO    StreamThr :11033 [internal.py:wandb_internal():86] W&B internal server running at pid: 11033, started at: 2025-08-06 09:46:33.888700
+2025-08-06 09:46:33,890 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: status
+2025-08-06 09:46:33,892 INFO    WriterThread:11033 [datastore.py:open_for_write():85] open: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/run-o5ie8nvv.wandb
+2025-08-06 09:46:33,892 DEBUG   SenderThread:11033 [sender.py:send():380] send: header
+2025-08-06 09:46:33,893 DEBUG   SenderThread:11033 [sender.py:send():380] send: run
+2025-08-06 09:46:34,296 INFO    SenderThread:11033 [dir_watcher.py:__init__():211] watching files in: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files
+2025-08-06 09:46:34,296 INFO    SenderThread:11033 [sender.py:_start_run_threads():1124] run started: o5ie8nvv with start time 1754491593.888612
+2025-08-06 09:46:34,300 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: check_version
+2025-08-06 09:46:34,300 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: check_version
+2025-08-06 09:46:34,424 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: run_start
+2025-08-06 09:46:34,436 DEBUG   HandlerThread:11033 [system_info.py:__init__():32] System info init
+2025-08-06 09:46:34,436 DEBUG   HandlerThread:11033 [system_info.py:__init__():47] System info init done
+2025-08-06 09:46:34,436 INFO    HandlerThread:11033 [system_monitor.py:start():194] Starting system monitor
+2025-08-06 09:46:34,437 INFO    SystemMonitor:11033 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-08-06 09:46:34,437 INFO    HandlerThread:11033 [system_monitor.py:probe():214] Collecting system info
+2025-08-06 09:46:34,437 INFO    SystemMonitor:11033 [interfaces.py:start():190] Started cpu monitoring
+2025-08-06 09:46:34,438 INFO    SystemMonitor:11033 [interfaces.py:start():190] Started disk monitoring
+2025-08-06 09:46:34,438 INFO    SystemMonitor:11033 [interfaces.py:start():190] Started gpu monitoring
+2025-08-06 09:46:34,439 INFO    SystemMonitor:11033 [interfaces.py:start():190] Started memory monitoring
+2025-08-06 09:46:34,439 INFO    SystemMonitor:11033 [interfaces.py:start():190] Started network monitoring
+2025-08-06 09:46:34,449 DEBUG   HandlerThread:11033 [system_info.py:probe():196] Probing system
+2025-08-06 09:46:34,449 DEBUG   HandlerThread:11033 [system_info.py:_probe_git():181] Probing git
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_info.py:_probe_git():189] Probing git done
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_info.py:probe():244] Probing system done
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_monitor.py:probe():223] {'os': 'Linux-6.14.0-27-generic-x86_64-with-glibc2.39', 'python': '3.10.0', 'heartbeatAt': '2025-08-06T14:46:34.449138', 'startedAt': '2025-08-06T14:46:33.883750', 'docker': None, 'cuda': None, 'args': ('--trainval_artifact', 'clean_sample.csv:latest', '--val_size', '0.2', '--random_seed', '42', '--stratify_by', 'neighbourhood_group', '--rf_config', '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/outputs/2025-08-06/09-46-30/rf_config.json', '--max_tfidf_features', '5', '--output_artifact', 'random_forest_model'), 'state': 'running', 'program': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/run.py', 'codePathLocal': 'run.py', 'codePath': 'src/train_random_forest/run.py', 'git': {'remote': 'https://github.com/DennisGrisham/NYC_airbnb_price_prediction.git', 'commit': '851ba1c92b0bc5d9091c41e26709759f5f7e4626'}, 'email': 'dgrish1@wgu.edu', 'root': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb', 'host': 'dennis-grisham-GE75-Raider-10SE', 'username': 'dennis-grisham', 'executable': '/home/dennis-grisham/miniconda3/envs/mlflow-d20df18b17b0c54747eba2677649d2bbc0879a75/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2892.34, 'min': 800.0, 'max': 5000.0}, 'cpu_freq_per_core': [{'current': 4299.988, 'min': 800.0, 'max': 5000.0}, {'current': 4300.508, 'min': 800.0, 'max': 5000.0}, {'current': 4299.977, 'min': 800.0, 'max': 5000.0}, {'current': 4304.848, 'min': 800.0, 'max': 5000.0}, {'current': 4299.992, 'min': 800.0, 'max': 5000.0}, {'current': 4720.836, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 4300.026, 'min': 800.0, 'max': 5000.0}], 'disk': {'/': {'total': 91.11075210571289, 'used': 38.892154693603516}}, 'gpu': 'NVIDIA GeForce RTX 2060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2060', 'memory_total': 6442450944}], 'memory': {'total': 31.09908676147461}}
+2025-08-06 09:46:34,452 INFO    HandlerThread:11033 [system_monitor.py:probe():224] Finished collecting system info
+2025-08-06 09:46:34,452 INFO    HandlerThread:11033 [system_monitor.py:probe():227] Publishing system info
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_info.py:_save_pip():68] Saving pip packages done
+2025-08-06 09:46:34,452 DEBUG   HandlerThread:11033 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-08-06 09:46:35,297 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/requirements.txt
+2025-08-06 09:46:35,297 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/conda-environment.yaml
+2025-08-06 09:46:35,494 DEBUG   HandlerThread:11033 [system_info.py:_save_conda():87] Saving conda packages done
+2025-08-06 09:46:35,494 INFO    HandlerThread:11033 [system_monitor.py:probe():229] Finished publishing system info
+2025-08-06 09:46:35,496 DEBUG   SenderThread:11033 [sender.py:send():380] send: files
+2025-08-06 09:46:35,496 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2025-08-06 09:46:35,500 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: stop_status
+2025-08-06 09:46:35,500 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: stop_status
+2025-08-06 09:46:35,502 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: internal_messages
+2025-08-06 09:46:35,767 DEBUG   SenderThread:11033 [sender.py:send():380] send: telemetry
+2025-08-06 09:46:35,767 DEBUG   SenderThread:11033 [sender.py:send():380] send: config
+2025-08-06 09:46:35,768 DEBUG   SenderThread:11033 [sender.py:send():380] send: config
+2025-08-06 09:46:35,883 INFO    wandb-upload_0:11033 [upload_job.py:push():131] Uploaded file /tmp/tmpejon2_r2wandb/pc7crfxv-wandb-metadata.json
+2025-08-06 09:46:36,236 DEBUG   SenderThread:11033 [sender.py:send():380] send: use_artifact
+2025-08-06 09:46:36,296 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/conda-environment.yaml
+2025-08-06 09:46:36,296 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log
+2025-08-06 09:46:36,297 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/wandb-metadata.json
+2025-08-06 09:46:38,297 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log
+2025-08-06 09:46:38,677 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: log_artifact
+2025-08-06 09:46:38,678 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: log_artifact
+2025-08-06 09:46:39,159 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: partial_history
+2025-08-06 09:46:39,298 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/media/images/feature_importance_0_951785649f04c4530e54.png
+2025-08-06 09:46:39,299 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/media
+2025-08-06 09:46:39,299 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/media/images
+2025-08-06 09:46:39,442 INFO    wandb-upload_2:11033 [upload_job.py:push():86] Skipped uploading /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmps5ca035z
+2025-08-06 09:46:39,442 INFO    wandb-upload_5:11033 [upload_job.py:push():86] Skipped uploading /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmpb1pqnw1g
+2025-08-06 09:46:39,443 INFO    wandb-upload_1:11033 [upload_job.py:push():86] Skipped uploading /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmpy889nf3o
+2025-08-06 09:46:39,444 INFO    wandb-upload_4:11033 [upload_job.py:push():86] Skipped uploading /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmpzraobki0
+2025-08-06 09:46:39,548 INFO    wandb-upload_6:11033 [upload_job.py:push():131] Uploaded file /tmp/tmpejon2_r2wandb/3qut3d49-media/images/feature_importance_0_951785649f04c4530e54.png
+2025-08-06 09:46:39,611 INFO    wandb-upload_0:11033 [upload_job.py:push():89] Uploaded file /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmpc7900igx
+2025-08-06 09:46:40,176 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-06 09:46:40,298 INFO    Thread-12 :11033 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log
+2025-08-06 09:46:42,695 INFO    wandb-upload_3:11033 [upload_job.py:push():89] Uploaded file /home/dennis-grisham/.local/share/wandb/artifacts/staging/tmph84n5kb4
+2025-08-06 09:46:43,409 INFO    SenderThread:11033 [sender.py:send_request_log_artifact():1446] logged artifact random_forest_model - {'id': 'QXJ0aWZhY3Q6MTkzMzc3NDYwOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcwNTMwNDAyNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTkzMzc1NDcyNg==', 'versionIndex': 44}}}
+2025-08-06 09:46:43,410 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: summary_record
+2025-08-06 09:46:43,411 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2025-08-06 09:46:43,411 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: summary_record
+2025-08-06 09:46:43,411 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: status_report
+2025-08-06 09:46:43,411 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2025-08-06 09:46:43,412 DEBUG   SenderThread:11033 [sender.py:send():380] send: files
+2025-08-06 09:46:43,412 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file media/images/feature_importance_0_951785649f04c4530e54.png with policy now
+2025-08-06 09:46:43,412 DEBUG   SenderThread:11033 [sender.py:send():380] send: history
+2025-08-06 09:46:43,412 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: summary_record
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2025-08-06 09:46:43,414 DEBUG   SenderThread:11033 [sender.py:send():380] send: exit
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:send_exit():585] handling exit code: 0
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:send_exit():587] handling runtime: 4
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:send_exit():593] send defer
+2025-08-06 09:46:43,414 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: poll_exit
+2025-08-06 09:46:43,414 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,414 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 0
+2025-08-06 09:46:43,414 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 0
+2025-08-06 09:46:43,414 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 1
+2025-08-06 09:46:43,415 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,415 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 1
+2025-08-06 09:46:43,415 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,415 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 1
+2025-08-06 09:46:43,415 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 2
+2025-08-06 09:46:43,415 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,415 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 2
+2025-08-06 09:46:43,415 INFO    HandlerThread:11033 [system_monitor.py:finish():203] Stopping system monitor
+2025-08-06 09:46:43,415 DEBUG   SystemMonitor:11033 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-08-06 09:46:43,415 DEBUG   SystemMonitor:11033 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-08-06 09:46:43,415 DEBUG   SystemMonitor:11033 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-08-06 09:46:43,415 INFO    HandlerThread:11033 [interfaces.py:finish():202] Joined cpu monitor
+2025-08-06 09:46:43,416 INFO    HandlerThread:11033 [interfaces.py:finish():202] Joined disk monitor
+2025-08-06 09:46:43,444 INFO    HandlerThread:11033 [interfaces.py:finish():202] Joined gpu monitor
+2025-08-06 09:46:43,444 INFO    HandlerThread:11033 [interfaces.py:finish():202] Joined memory monitor
+2025-08-06 09:46:43,444 INFO    HandlerThread:11033 [interfaces.py:finish():202] Joined network monitor
+2025-08-06 09:46:43,444 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,444 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 2
+2025-08-06 09:46:43,444 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 3
+2025-08-06 09:46:43,444 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,444 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 3
+2025-08-06 09:46:43,445 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,445 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 3
+2025-08-06 09:46:43,445 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 4
+2025-08-06 09:46:43,445 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,445 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 4
+2025-08-06 09:46:43,445 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,445 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 4
+2025-08-06 09:46:43,445 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 5
+2025-08-06 09:46:43,445 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,445 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 5
+2025-08-06 09:46:43,445 DEBUG   SenderThread:11033 [sender.py:send():380] send: summary
+2025-08-06 09:46:43,446 INFO    SenderThread:11033 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2025-08-06 09:46:43,446 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,446 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 5
+2025-08-06 09:46:43,446 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 6
+2025-08-06 09:46:43,446 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,446 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 6
+2025-08-06 09:46:43,446 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,446 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 6
+2025-08-06 09:46:43,448 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: status_report
+2025-08-06 09:46:43,533 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 7
+2025-08-06 09:46:43,533 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,534 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 7
+2025-08-06 09:46:43,534 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,535 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 7
+2025-08-06 09:46:43,788 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 8
+2025-08-06 09:46:43,789 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,789 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 8
+2025-08-06 09:46:43,790 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:43,790 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 8
+2025-08-06 09:46:43,790 INFO    SenderThread:11033 [job_builder.py:build():298] Attempting to build job artifact
+2025-08-06 09:46:43,791 INFO    SenderThread:11033 [job_builder.py:_get_source_type():428] is repo sourced job
+2025-08-06 09:46:43,795 INFO    SenderThread:11033 [job_builder.py:build():404] adding wandb-job metadata file
+2025-08-06 09:46:43,805 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 9
+2025-08-06 09:46:43,805 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:43,806 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 9
+2025-08-06 09:46:43,807 DEBUG   SenderThread:11033 [sender.py:send():380] send: artifact
+2025-08-06 09:46:43,815 INFO    wandb-upload_2:11033 [upload_job.py:push():131] Uploaded file /tmp/tmpejon2_r2wandb/jx8b8aa6-media/images/feature_importance_0_951785649f04c4530e54.png
+2025-08-06 09:46:44,118 INFO    SenderThread:11033 [sender.py:send_artifact():1458] sent artifact job-https___github.com_DennisGrisham_NYC_airbnb_price_prediction.git_src_train_random_forest_run.py - {'id': 'QXJ0aWZhY3Q6MTkyNTg1Njg1Nw==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcwNTI5ODExOA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTkzMjY0OTM5OA==', 'versionIndex': 2}}}
+2025-08-06 09:46:44,118 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:44,119 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 9
+2025-08-06 09:46:44,119 INFO    SenderThread:11033 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/config.yaml
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/wandb-summary.json
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:finish():388] scan: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log output.log
+2025-08-06 09:46:44,300 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/requirements.txt requirements.txt
+2025-08-06 09:46:44,301 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/wandb-metadata.json wandb-metadata.json
+2025-08-06 09:46:44,301 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/wandb-summary.json wandb-summary.json
+2025-08-06 09:46:44,304 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/conda-environment.yaml conda-environment.yaml
+2025-08-06 09:46:44,306 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/config.yaml config.yaml
+2025-08-06 09:46:44,308 INFO    SenderThread:11033 [dir_watcher.py:finish():402] scan save: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/media/images/feature_importance_0_951785649f04c4530e54.png media/images/feature_importance_0_951785649f04c4530e54.png
+2025-08-06 09:46:44,308 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 10
+2025-08-06 09:46:44,308 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:44,308 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 10
+2025-08-06 09:46:44,309 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:44,309 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 10
+2025-08-06 09:46:44,309 INFO    SenderThread:11033 [file_pusher.py:finish():175] shutting down file pusher
+2025-08-06 09:46:44,523 INFO    wandb-upload_4:11033 [upload_job.py:push():131] Uploaded file /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/requirements.txt
+2025-08-06 09:46:44,603 INFO    wandb-upload_1:11033 [upload_job.py:push():131] Uploaded file /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/output.log
+2025-08-06 09:46:44,631 INFO    wandb-upload_5:11033 [upload_job.py:push():131] Uploaded file /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/conda-environment.yaml
+2025-08-06 09:46:44,638 INFO    wandb-upload_0:11033 [upload_job.py:push():131] Uploaded file /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/wandb-summary.json
+2025-08-06 09:46:44,643 INFO    wandb-upload_2:11033 [upload_job.py:push():131] Uploaded file /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/files/config.yaml
+2025-08-06 09:46:44,844 INFO    Thread-11 (_thread_body):11033 [sender.py:transition_state():613] send defer: 11
+2025-08-06 09:46:44,844 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:44,845 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 11
+2025-08-06 09:46:44,846 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:44,846 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 11
+2025-08-06 09:46:44,846 INFO    SenderThread:11033 [file_pusher.py:join():181] waiting for file pusher
+2025-08-06 09:46:44,846 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 12
+2025-08-06 09:46:44,847 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:44,847 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 12
+2025-08-06 09:46:44,848 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:44,848 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 12
+2025-08-06 09:46:44,849 INFO    SenderThread:11033 [file_stream.py:finish():595] file stream finish called
+2025-08-06 09:46:45,179 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: keepalive
+2025-08-06 09:46:45,232 INFO    SenderThread:11033 [file_stream.py:finish():599] file stream finish is done
+2025-08-06 09:46:45,232 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 13
+2025-08-06 09:46:45,233 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:45,233 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 13
+2025-08-06 09:46:45,234 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:45,234 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 13
+2025-08-06 09:46:45,234 INFO    SenderThread:11033 [sender.py:transition_state():613] send defer: 14
+2025-08-06 09:46:45,235 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: defer
+2025-08-06 09:46:45,235 INFO    HandlerThread:11033 [handler.py:handle_request_defer():172] handle defer: 14
+2025-08-06 09:46:45,236 DEBUG   SenderThread:11033 [sender.py:send():380] send: final
+2025-08-06 09:46:45,236 DEBUG   SenderThread:11033 [sender.py:send():380] send: footer
+2025-08-06 09:46:45,236 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: defer
+2025-08-06 09:46:45,237 INFO    SenderThread:11033 [sender.py:send_request_defer():609] handle sender defer: 14
+2025-08-06 09:46:45,238 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-06 09:46:45,239 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: poll_exit
+2025-08-06 09:46:45,240 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: server_info
+2025-08-06 09:46:45,241 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: server_info
+2025-08-06 09:46:45,246 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: get_summary
+2025-08-06 09:46:45,247 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: sampled_history
+2025-08-06 09:46:45,247 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: internal_messages
+2025-08-06 09:46:45,247 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: job_info
+2025-08-06 09:46:45,653 DEBUG   SenderThread:11033 [sender.py:send_request():407] send_request: job_info
+2025-08-06 09:46:45,653 INFO    MainThread:11033 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2025-08-06 09:46:45,653 INFO    MainThread:11033 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2025-08-06 09:46:45,653 INFO    MainThread:11033 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2025-08-06 09:46:45,654 DEBUG   HandlerThread:11033 [handler.py:handle_request():146] handle_request: shutdown
+2025-08-06 09:46:45,654 INFO    HandlerThread:11033 [handler.py:finish():866] shutting down handler
+2025-08-06 09:46:46,247 INFO    WriterThread:11033 [datastore.py:close():294] close: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/wandb/run-20250806_094633-o5ie8nvv/run-o5ie8nvv.wandb
+2025-08-06 09:46:46,653 INFO    SenderThread:11033 [sender.py:finish():1536] shutting down sender
+2025-08-06 09:46:46,654 INFO    SenderThread:11033 [file_pusher.py:finish():175] shutting down file pusher
+2025-08-06 09:46:46,654 INFO    SenderThread:11033 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/8d4ed394815b48799bb16eb190845697/artifacts
+end_time: 1754511678054
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d4ed394815b48799bb16eb190845697
+run_name: adorable-goat-533
+run_uuid: 8d4ed394815b48799bb16eb190845697
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754511677237
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,28 @@
+name: nyc_airbnb
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      steps:
+        description: Comma-separated list of steps to execute (useful for debugging)
+        type: str
+        default: all
+      hydra_options:
+        description: Other configuration parameters to override
+        type: str
+        default: ''
+    command: "python main.py main.steps=\\'{steps}\\' $(echo {hydra_options})"
+
+  register_model:
+    parameters:
+      hydra_options:
+        description: Other configuration parameters to override
+        type: str
+        default: ''
+    command: "python src/register_model/run.py $(echo {hydra_options})"
+
+  evaluate_model:
+    parameters:
+      config: {type: str, default: "src/evaluate_model/evaluate_config.json"}
+    command: "python src/evaluate_model/run.py --config {config}"

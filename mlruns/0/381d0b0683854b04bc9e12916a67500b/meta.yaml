@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/381d0b0683854b04bc9e12916a67500b/artifacts
+end_time: 1754538269499
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 381d0b0683854b04bc9e12916a67500b
+run_name: skillful-bear-563
+run_uuid: 381d0b0683854b04bc9e12916a67500b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754538266772
+status: 3
+tags: []
+user_id: dennis-grisham

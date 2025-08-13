@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/82d3e85866444a2a99f7c4e501f42c58/artifacts
+end_time: 1754359103973
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 82d3e85866444a2a99f7c4e501f42c58
+run_name: rumbling-frog-478
+run_uuid: 82d3e85866444a2a99f7c4e501f42c58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754359083527
+status: 3
+tags: []
+user_id: dennis-grisham

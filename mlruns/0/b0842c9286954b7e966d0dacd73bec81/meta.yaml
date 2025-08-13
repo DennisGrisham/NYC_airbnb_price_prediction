@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/b0842c9286954b7e966d0dacd73bec81/artifacts
+end_time: 1754441742166
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b0842c9286954b7e966d0dacd73bec81
+run_name: unleashed-steed-297
+run_uuid: b0842c9286954b7e966d0dacd73bec81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754441731530
+status: 4
+tags: []
+user_id: dennis-grisham

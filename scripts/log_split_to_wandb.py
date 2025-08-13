@@ -1,0 +1,10 @@
+import wandb, os
+run = wandb.init(project="nyc_airbnb", job_type="log_split_artifacts")
+art = wandb.Artifact("train_data.csv", type="split_data", description="Train split from segregate step")
+art.add_file(os.path.join("outputs","train_data.csv"))
+run.log_artifact(art)
+art2 = wandb.Artifact("test_data.csv", type="split_data", description="Test split from segregate step")
+art2.add_file(os.path.join("outputs","test_data.csv"))
+run.log_artifact(art2)
+run.finish()
+print("✅ Logged train_data.csv and test_data.csv as W&B artifacts")

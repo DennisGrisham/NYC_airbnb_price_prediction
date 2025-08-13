@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/86503998561640a9b60d97985cb6b899/artifacts
+end_time: 1754248848577
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86503998561640a9b60d97985cb6b899
+run_name: painted-jay-472
+run_uuid: 86503998561640a9b60d97985cb6b899
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754248838558
+status: 3
+tags: []
+user_id: dennis-grisham

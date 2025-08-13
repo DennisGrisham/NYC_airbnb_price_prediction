@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/e3f0e09e75404151aca64d537d6e2e5c/artifacts
+end_time: 1754531325698
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e3f0e09e75404151aca64d537d6e2e5c
+run_name: crawling-jay-898
+run_uuid: e3f0e09e75404151aca64d537d6e2e5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754531322181
+status: 3
+tags: []
+user_id: dennis-grisham

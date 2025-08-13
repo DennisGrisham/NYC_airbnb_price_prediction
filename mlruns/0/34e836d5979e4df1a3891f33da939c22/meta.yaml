@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/34e836d5979e4df1a3891f33da939c22/artifacts
+end_time: 1754437359571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 34e836d5979e4df1a3891f33da939c22
+run_name: bustling-penguin-124
+run_uuid: 34e836d5979e4df1a3891f33da939c22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754437340684
+status: 3
+tags: []
+user_id: dennis-grisham

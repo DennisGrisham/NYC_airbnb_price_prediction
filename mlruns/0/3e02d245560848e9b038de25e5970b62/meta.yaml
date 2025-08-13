@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/3e02d245560848e9b038de25e5970b62/artifacts
+end_time: 1754495889871
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3e02d245560848e9b038de25e5970b62
+run_name: adventurous-vole-626
+run_uuid: 3e02d245560848e9b038de25e5970b62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754495868290
+status: 3
+tags: []
+user_id: dennis-grisham

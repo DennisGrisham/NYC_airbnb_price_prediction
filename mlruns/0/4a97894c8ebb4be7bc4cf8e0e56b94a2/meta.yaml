@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/4a97894c8ebb4be7bc4cf8e0e56b94a2/artifacts
+end_time: 1754511677230
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4a97894c8ebb4be7bc4cf8e0e56b94a2
+run_name: ambitious-colt-647
+run_uuid: 4a97894c8ebb4be7bc4cf8e0e56b94a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754511649763
+status: 3
+tags: []
+user_id: dennis-grisham

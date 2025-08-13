@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/c8e2992de0504c90b5e7200e061d01e3/artifacts
+end_time: 1754536772154
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c8e2992de0504c90b5e7200e061d01e3
+run_name: agreeable-grouse-297
+run_uuid: c8e2992de0504c90b5e7200e061d01e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754536772042
+status: 3
+tags: []
+user_id: dennis-grisham

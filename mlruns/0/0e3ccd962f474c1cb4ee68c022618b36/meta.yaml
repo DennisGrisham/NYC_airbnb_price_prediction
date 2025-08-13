@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/0e3ccd962f474c1cb4ee68c022618b36/artifacts
+end_time: 1754438368996
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e3ccd962f474c1cb4ee68c022618b36
+run_name: unique-stag-732
+run_uuid: 0e3ccd962f474c1cb4ee68c022618b36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754438352615
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/63079bf03b024f42a3d2a70d6bc7569a/artifacts
+end_time: 1754444895614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 63079bf03b024f42a3d2a70d6bc7569a
+run_name: angry-hound-89
+run_uuid: 63079bf03b024f42a3d2a70d6bc7569a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754444894800
+status: 3
+tags: []
+user_id: dennis-grisham

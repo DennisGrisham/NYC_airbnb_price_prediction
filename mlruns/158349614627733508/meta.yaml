@@ -1,0 +1,6 @@
+artifact_location: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/158349614627733508
+creation_time: 1754441559064
+experiment_id: '158349614627733508'
+last_update_time: 1754441559064
+lifecycle_stage: active
+name: train_random_forest

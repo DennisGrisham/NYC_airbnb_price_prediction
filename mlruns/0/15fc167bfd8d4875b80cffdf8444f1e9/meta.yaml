@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/15fc167bfd8d4875b80cffdf8444f1e9/artifacts
+end_time: 1754444894793
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 15fc167bfd8d4875b80cffdf8444f1e9
+run_name: painted-lynx-85
+run_uuid: 15fc167bfd8d4875b80cffdf8444f1e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754444877172
+status: 3
+tags: []
+user_id: dennis-grisham

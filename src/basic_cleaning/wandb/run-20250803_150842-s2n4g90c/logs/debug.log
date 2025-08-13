@@ -1,0 +1,42 @@
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Configure stats pid to 38191
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from /home/dennis-grisham/.config/wandb/settings
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/settings
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'run_group': 'development', 'project': 'nyc_airbnb'}
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-08-03 15:08:42,623 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/basic_cleaning/run.py', 'program_abspath': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/run.py', 'program': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/run.py'}
+2025-08-03 15:08:42,624 INFO    MainThread:38191 [wandb_init.py:_log_setup():524] Logging user logs to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/run-20250803_150842-s2n4g90c/logs/debug.log
+2025-08-03 15:08:42,624 INFO    MainThread:38191 [wandb_init.py:_log_setup():525] Logging internal logs to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/run-20250803_150842-s2n4g90c/logs/debug-internal.log
+2025-08-03 15:08:42,624 INFO    MainThread:38191 [wandb_init.py:init():564] calling init triggers
+2025-08-03 15:08:42,624 INFO    MainThread:38191 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2025-08-03 15:08:42,624 INFO    MainThread:38191 [wandb_init.py:init():614] starting backend
+2025-08-03 15:08:42,625 INFO    MainThread:38191 [wandb_init.py:init():618] setting up manager
+2025-08-03 15:08:42,628 INFO    MainThread:38191 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-08-03 15:08:42,630 INFO    MainThread:38191 [wandb_init.py:init():624] backend started and connected
+2025-08-03 15:08:42,634 INFO    MainThread:38191 [wandb_init.py:init():716] updated telemetry
+2025-08-03 15:08:42,646 INFO    MainThread:38191 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2025-08-03 15:08:43,035 INFO    MainThread:38191 [wandb_run.py:_on_init():2254] communicating current version
+2025-08-03 15:08:43,170 INFO    MainThread:38191 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.21.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-08-03 15:08:43,170 INFO    MainThread:38191 [wandb_init.py:init():800] starting run threads in backend
+2025-08-03 15:08:43,735 INFO    MainThread:38191 [wandb_run.py:_console_start():2233] atexit reg
+2025-08-03 15:08:43,735 INFO    MainThread:38191 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2025-08-03 15:08:43,735 INFO    MainThread:38191 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2025-08-03 15:08:43,735 INFO    MainThread:38191 [wandb_run.py:_redirect():2178] Redirects installed.
+2025-08-03 15:08:43,735 INFO    MainThread:38191 [wandb_init.py:init():841] run started, returning control to user process
+2025-08-03 15:08:43,736 INFO    MainThread:38191 [wandb_run.py:_config_callback():1342] config_cb None None {'input_artifact': 'sample.csv:latest', 'output_artifact': 'clean_sample.csv', 'output_type': 'clean_data', 'output_description': 'Data with outliers and nulls removed', 'min_price': 10.0, 'max_price': 350.0}
+2025-08-03 15:08:43,740 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2025-08-03 15:08:43,740 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Configure stats pid to 38191
+2025-08-03 15:08:43,740 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from /home/dennis-grisham/.config/wandb/settings
+2025-08-03 15:08:43,740 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/settings
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'run_group': 'development', 'project': 'nyc_airbnb'}
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/basic_cleaning/run.py', 'program_abspath': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/run.py', 'program': '/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/run.py'}
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_init.py:_log_setup():524] Logging user logs to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/run-20250803_150843-zown7kta/logs/debug.log
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_init.py:_log_setup():525] Logging internal logs to /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/basic_cleaning/wandb/run-20250803_150843-zown7kta/logs/debug-internal.log
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_init.py:init():564] calling init triggers
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2025-08-03 15:08:43,741 INFO    MainThread:38191 [wandb_init.py:init():609] wandb.init() called when a run is still active
+2025-08-03 15:08:47,733 WARNING MsgRouterThr:38191 [router.py:message_loop():77] message_loop has been closed

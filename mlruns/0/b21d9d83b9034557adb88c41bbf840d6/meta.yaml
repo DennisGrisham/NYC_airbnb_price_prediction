@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/b21d9d83b9034557adb88c41bbf840d6/artifacts
+end_time: 1754505565749
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b21d9d83b9034557adb88c41bbf840d6
+run_name: honorable-bear-899
+run_uuid: b21d9d83b9034557adb88c41bbf840d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754505546620
+status: 3
+tags: []
+user_id: dennis-grisham

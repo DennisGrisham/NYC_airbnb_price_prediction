@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/181aaa18f1c94637ac7eaf3d3e349854/artifacts
+end_time: 1754445071857
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 181aaa18f1c94637ac7eaf3d3e349854
+run_name: rare-tern-272
+run_uuid: 181aaa18f1c94637ac7eaf3d3e349854
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754445071048
+status: 3
+tags: []
+user_id: dennis-grisham

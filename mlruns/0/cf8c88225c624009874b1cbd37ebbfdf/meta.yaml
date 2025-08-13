@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/cf8c88225c624009874b1cbd37ebbfdf/artifacts
+end_time: 1754501742223
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf8c88225c624009874b1cbd37ebbfdf
+run_name: capricious-pug-68
+run_uuid: cf8c88225c624009874b1cbd37ebbfdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754501721570
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754512666513
+current_stage: None
+description: null
+last_updated_timestamp: 1754512666513
+name: nyc_airbnb_random_forest
+run_id: 0240603e9517416fa11a5ef012a2791d
+run_link: null
+source: runs:/0240603e9517416fa11a5ef012a2791d/random_forest_model_20250806_153638
+status: READY
+status_message: null
+storage_location: runs:/0240603e9517416fa11a5ef012a2791d/random_forest_model_20250806_153638
+user_id: null
+version: 2

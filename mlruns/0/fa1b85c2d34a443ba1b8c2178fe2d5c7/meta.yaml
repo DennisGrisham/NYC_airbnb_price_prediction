@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/fa1b85c2d34a443ba1b8c2178fe2d5c7/artifacts
+end_time: 1754440710273
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa1b85c2d34a443ba1b8c2178fe2d5c7
+run_name: unleashed-snipe-86
+run_uuid: fa1b85c2d34a443ba1b8c2178fe2d5c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754440693938
+status: 3
+tags: []
+user_id: dennis-grisham

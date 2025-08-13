@@ -1,0 +1,5 @@
+[2025-08-05 20:40:58,486][__main__][INFO] - [DEBUG] Project root: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model
+[2025-08-05 20:40:58,486][__main__][INFO] - [DEBUG] Looking for runs in: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs
+[2025-08-05 20:40:58,487][__main__][INFO] - [DEBUG] Using latest pipeline outputs dir: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs/2025-08-05/20-40-58
+[2025-08-05 20:40:58,487][__main__][INFO] - [DEBUG] Expected rf_config.json path: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs/2025-08-05/20-40-58/rf_config.json
+[2025-08-05 20:40:58,487][__main__][ERROR] - No rf_config.json found in /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs/2025-08-05/20-40-58 — cannot continue.

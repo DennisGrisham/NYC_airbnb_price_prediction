@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/03262e47070d4d0a82b234d46779d417/artifacts
+end_time: 1754491609228
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 03262e47070d4d0a82b234d46779d417
+run_name: dapper-finch-521
+run_uuid: 03262e47070d4d0a82b234d46779d417
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754491587803
+status: 4
+tags: []
+user_id: dennis-grisham

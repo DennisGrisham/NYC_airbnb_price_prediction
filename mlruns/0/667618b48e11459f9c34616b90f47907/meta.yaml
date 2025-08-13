@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/667618b48e11459f9c34616b90f47907/artifacts
+end_time: 1754499231517
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 667618b48e11459f9c34616b90f47907
+run_name: awesome-hen-871
+run_uuid: 667618b48e11459f9c34616b90f47907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754499211333
+status: 3
+tags: []
+user_id: dennis-grisham

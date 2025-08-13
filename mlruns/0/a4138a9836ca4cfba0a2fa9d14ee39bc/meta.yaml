@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/a4138a9836ca4cfba0a2fa9d14ee39bc/artifacts
+end_time: 1754250371118
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4138a9836ca4cfba0a2fa9d14ee39bc
+run_name: big-elk-865
+run_uuid: a4138a9836ca4cfba0a2fa9d14ee39bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754250334735
+status: 4
+tags: []
+user_id: dennis-grisham

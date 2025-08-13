@@ -1,0 +1,6 @@
+name: register_model
+
+entry_points:
+  main:
+    command: >
+      python run.py

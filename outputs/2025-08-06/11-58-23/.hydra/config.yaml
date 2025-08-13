@@ -1,0 +1,37 @@
+main:
+  components_repository: https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter.git#components
+  project_name: nyc_airbnb
+  experiment_name: development
+  steps: train_random_forest,register_model
+  random_seed: 42
+max_tfidf_features: 5
+output_artifact: random_forest_model
+etl:
+  sample: sample1.csv
+  min_price: 10
+  max_price: 350
+data:
+  trainval_artifact: clean_sample.csv:latest
+  test_artifact: test_data.csv:latest
+  stratify_by: neighbourhood_group
+  val_size: 0.2
+data_check:
+  kl_threshold: 0.2
+modeling:
+  test_size: 0.2
+  val_size: 0.2
+  random_seed: 42
+  stratify_by: neighbourhood_group
+  random_forest:
+    n_estimators: 100
+    max_depth: 15
+    min_samples_split: 4
+    min_samples_leaf: 3
+    n_jobs: -1
+    criterion: squared_error
+    max_features: 0.5
+    oob_score: true
+export_artifact: random_forest_model
+register_model:
+  step: src/register_model
+  model_name: nyc_airbnb_random_forest

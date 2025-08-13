@@ -1,0 +1,15 @@
+artifact_uri: file:///home/dennis-grisham/D501_Project_1_NYC_Airbnb/mlruns/0/9161d96616554f1984c1891ed3824550/artifacts
+end_time: 1754846310192
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9161d96616554f1984c1891ed3824550
+run_name: respected-shoat-244
+run_uuid: 9161d96616554f1984c1891ed3824550
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754846290624
+status: 3
+tags: []
+user_id: dennis-grisham

@@ -1,0 +1,4 @@
+{
+  "input_artifact": "sample1.csv",
+  "output_artifact": "clean_sampled.parquet"
+}
