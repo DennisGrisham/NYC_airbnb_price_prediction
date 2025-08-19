@@ -1,2 +1,0 @@
-[2025-08-05 20:33:33,818][__main__][INFO] - [DEBUG] Using latest pipeline outputs dir: /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs/2025-08-05/20-33-33
-[2025-08-05 20:33:33,818][__main__][ERROR] - No rf_config.json found in /home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/register_model/outputs/2025-08-05/20-33-33 — cannot continue.

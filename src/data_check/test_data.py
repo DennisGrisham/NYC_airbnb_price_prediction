@@ -63,3 +63,20 @@ def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_th
 ########################################################
 # Implement here test_row_count and test_price_range   #
 ########################################################
+
+def test_row_count(data: pd.DataFrame, ref_data: pd.DataFrame):
+    """
+    Ensure the new dataset has a reasonable number of rows compared to reference.
+    We allow 50%–150% of the reference row count.
+    """
+    n = data.shape[0]
+    n_ref = ref_data.shape[0]
+    assert 0.5 * n_ref <= n <= 1.5 * n_ref, \
+        f"Row count {n} is outside 50%–150% of reference {n_ref}"
+
+def test_price_range(data: pd.DataFrame, min_price: float, max_price: float):
+    """
+    Ensure all prices are within the allowed range.
+    """
+    assert data["price"].between(min_price, max_price).all(), \
+        "Found prices outside the permitted range"

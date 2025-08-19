@@ -1,0 +1,19 @@
+# === MLflow & W&B run artifacts ===
+mlruns/
+wandb/
+
+# === Local pipeline outputs ===
+outputs/
+*.log
+
+# === Python cache ===
+__pycache__/
+*.pyc
+
+# === Jupyter/VSCode ===
+.ipynb_checkpoints/
+.vscode/
+
+# === Large model artifacts ===
+*.joblib
+random_forest_dir/

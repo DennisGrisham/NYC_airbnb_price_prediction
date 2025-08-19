@@ -1,6 +1,6 @@
 main:
   components_repository: "https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter.git#components"
-  project_name: nyc_airbnb
+  project_name: nyc_airbnb_public
   experiment_name: development
   steps: all
   random_seed: 42
@@ -22,7 +22,7 @@ segregate:
   test_size: 0.2
   random_seed: 42
   stratify_by: neighbourhood_group
-  train_output: train_data.csv
+  train_output: trainval_data.csv
   test_output: test_data.csv
   output_artifact_train: train_data.csv
   output_artifact_test: test_data.csv
@@ -30,7 +30,7 @@ segregate:
   output_description: "Train/test split of the cleaned dataset"
 
 data:
-  trainval_artifact: "train_data.csv:latest"
+  trainval_artifact: "trainval_data.csv:latest"
   test_artifact: "test_data.csv:latest"
   stratify_by: "neighbourhood_group"
   val_size: 0.2
@@ -58,6 +58,10 @@ export_artifact: random_forest_model
 register_model:
   step: src/register_model
   model_name: nyc_airbnb_random_forest
+
+wandb:
+  entity: dgrish1-western-governors-university
+  project: nyc_airbnb_public
 
 hydra:
   run:

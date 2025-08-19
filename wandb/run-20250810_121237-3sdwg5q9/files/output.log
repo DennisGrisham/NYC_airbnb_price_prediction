@@ -1,7 +1,0 @@
-[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
-Traceback (most recent call last):
-  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/scripts/get_clean_from_wandb.py", line 14, in <module>
-    shutil.copyfile(candidates[0], os.path.join(dst, "clean_sample.csv"))
-  File "/home/dennis-grisham/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/shutil.py", line 234, in copyfile
-    raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
-shutil.SameFileError: 'outputs/clean_sample.csv' and 'outputs/clean_sample.csv' are the same file

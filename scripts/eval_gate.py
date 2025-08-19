@@ -36,7 +36,7 @@ def main():
         cmd = [
             "mlflow", "models", "predict",
             "-m", args.model_uri,
-            "--env-manager", "local",
+       	    "--env-manager", "conda",
             "--input-path", args.test_csv,   # <- changed
             "--content-type", "csv",
             "--output-path", preds_path      # <- changed

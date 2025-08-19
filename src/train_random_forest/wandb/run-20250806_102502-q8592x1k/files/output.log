@@ -1,9 +1,0 @@
-2025-08-06 10:25:04,557 [DEBUG] Training run_id: b9faa1e746924b7c8547909a0f47b74d
-Traceback (most recent call last):
-  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/run.py", line 217, in <module>
-    go(args)
-  File "/home/dennis-grisham/D501_Project_1_NYC_Airbnb/src/train_random_forest/run.py", line 55, in go
-    base_outputs_dir = os.path.join(hydra.utils.get_original_cwd(), "outputs")
-  File "/home/dennis-grisham/miniconda3/envs/mlflow-d20df18b17b0c54747eba2677649d2bbc0879a75/lib/python3.10/site-packages/hydra/utils.py", line 92, in get_original_cwd
-    raise ValueError(
-ValueError: get_original_cwd() must only be used after HydraConfig is initialized
