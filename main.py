@@ -14,21 +14,33 @@ logger = logging.getLogger(__name__)
 _steps = [
     "download",
     "basic_cleaning",
-    "segregate",            # ✅ ADDED: our local split step
+    "segregate",            # ADDED: local split step, commented out data_split and removed from _steps
     "data_check",
-    "data_split",
     "train_random_forest",
-    "register_model",       # ✅ Keep in sequence-capable list
+    "register_model",       # Keep in sequence-capable list
     # "test_regression_model"  # intentionally not in default steps
 ]
 
 # This automatically reads in the configuration
 @hydra.main(config_name='config')
 def go(config: DictConfig):
+   
+    # --- WandB wiring (read from config['wandb'] if available) ---
+    wandb_entity = None
+    wandb_project = None
+    try:
+        wandb_entity  = config["wandb"]["entity"]
+        wandb_project = config["wandb"]["project"]
+    except Exception:
+        pass  # fall back to 'main' section if missing
 
-    # Setup the wandb experiment. All runs will be grouped under this name
-    os.environ["WANDB_PROJECT"] = config["main"]["project_name"]
-    os.environ["WANDB_RUN_GROUP"] = config["main"]["experiment_name"]
+    # Set env vars for the W&B SDK / components
+    if wandb_entity:
+        os.environ["WANDB_ENTITY"] = str(wandb_entity)
+    if wandb_project:
+        os.environ["WANDB_PROJECT"] = str(wandb_project)
+    os.environ["WANDB_RUN_GROUP"] = str(config["main"]["experiment_name"])
+    # --------------------------------------------------------------
 
     # Steps to execute
     steps_par = config['main']['steps']
@@ -76,23 +88,28 @@ def go(config: DictConfig):
                 },
             )
 
-        # ✅ NEW: run our local segregation step (writes outputs/train_data.csv & outputs/test_data.csv)
+        # Run local segregation step (writes outputs/train_data.csv & outputs/test_data.csv)
         if "segregate" in active_steps:
             logger.info("▶ Running local 'segregate' step (src/segregate/run.py)...")
             subprocess.check_call([sys.executable, os.path.join("src", "segregate", "run.py")])
             logger.info("✅ Finished 'segregate' step")
 
         if "data_check" in active_steps:
-            ##################
-            # Implement here #
-            ##################
-            pass
+            _ = mlflow.run(
+                os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
+                "main",
+                parameters={
+                    "csv": "clean_sample.csv:latest",
+                    "ref": "sample.csv:latest",
+                    "kl_threshold": config["data_check"]["kl_threshold"],
+                    "min_price": config["etl"]["min_price"],
+                    "max_price": config["etl"]["max_price"],
+                },
+            )
 
-        if "data_split" in active_steps:
-            ##################
-            # Implement here #
-            ##################
-            pass
+        # if "data_split" in active_steps:
+        #    (unused placeholder)
+        #    pass
 
         if "train_random_forest" in active_steps:
             # NOTE: we need to serialize the random forest configuration into JSON
@@ -147,7 +164,7 @@ def go(config: DictConfig):
             # model_uri = f"models:/{model_name}/5"
             # or if you start using stages:
             # model_uri = f"models:/{model_name}/Staging"
-            model_uri = f"models:/{model_name}/5"
+            model_uri = f"models:/{model_name}/Staging"
 
             test_csv = os.path.join(os.getcwd(), "outputs", "test_data.csv")
 
