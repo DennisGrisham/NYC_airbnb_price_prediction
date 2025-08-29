@@ -72,6 +72,15 @@ You should see a message similar to:
 wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
 ```
 
+### Weights & Biases Project
+
+This project logs all pipeline runs to Weights & Biases under the following project:
+
+- Project name: **nyc_airbnb**
+- Link: [https://wandb.ai/dgrish1-western-governors-university/nyc_airbnb](https://wandb.ai/dgrish1-western-governors-university/nyc_airbnb)
+
+> Note: Due to organization account settings, this project is currently Team-visible.
+
 
 ### The configuration
 As usual, the parameters controlling the pipeline are defined in the ``config.yaml`` file defined in
@@ -87,6 +96,24 @@ NOTE: do NOT hardcode any parameter when writing the pipeline. All the parameter
 accessed from the configuration file.
 
 ### Running the entire pipeline or just a selection of steps
+
+**First Run Quickstart (Important for Reproducibility)**
+On a fresh clone or grader's environment, you must set environment variables before running the full pipeline. 
+Run these commands from the project root:
+
+```bash
+wandb login [your API key]   # Only needs to be done once
+unset WANDB_MODE             # Ensure we are online
+export WANDB_ENTITY=dgrish1-western-governors-university
+export WANDB_PROJECT=nyc_airbnb
+export MLFLOW_TRACKING_URI="file://$PWD/mlruns"
+
+mlflow run . --experiment-name nyc_airbnb_pipeline \
+  -P steps=download,basic_cleaning,segregate,data_check,train_random_forest,register_model,test_regression_model
+```
+
+This guarantees that MLflow creates the experiment locally and W&B logs artifacts online, avoiding the `Could not find experiment with ID 0` error.
+
 In order to run the pipeline when you are developing, you need to be in the root of the starter kit, 
 then you can execute as usual:
 
@@ -220,18 +247,18 @@ This appendix outlines the complete, runnable pipeline that created the final Ra
 It includes exact commands for running, evaluating, registering, promoting, and reproducing inference.
 All configuration values are stored in **Hydra** (`config.yaml`) — nothing is hard-coded in the step scripts.
 
-> **Environment & Tooling**
->
-> - OS: Ubuntu 22.04
-> - Python: 3.10
-> - Tools: `conda`, `mlflow`, `wandb`
->
-> ```bash
-> conda activate nyc_airbnb_dev
-> wandb login YOUR_API_KEY
-> export WANDB_ENTITY=<your_wandb_entity>
-> export WANDB_PROJECT=nyc_airbnb_public
-> ```
+**Environment & Tooling**
+
+- OS: Ubuntu 22.04
+- Python: 3.10
+- Tools: `conda`, `mlflow`, `wandb`
+
+```bash
+conda activate nyc_airbnb_dev
+wandb login YOUR_API_KEY
+export WANDB_ENTITY=<your_wandb_entity>
+export WANDB_PROJECT=nyc_airbnb
+```
 
 
 ### A. Quickstart: Run the whole pipeline
@@ -295,6 +322,10 @@ Below is a breakdown of the main pipeline stages, what each one does, and what g
      - Gate thresholds (passed as command-line arguments, not in config.yaml)
    - **Outputs (local):** `outputs/eval_metrics.json` with `R²`/`MAE` and pass/fail status
    - **Default gate (example):** `R²` ≥ **0.50**, `MAE` ≤ **40.0** (defaults when running the evaluation step)
+
+**Pipeline Lineage (W&B Graph View)**
+Here is the pipeline lineage visualization from W&B, showing all steps connected end-to-end.
+![W&B lineage graph — random_forest_model v0](images/wandb_lineage_random_forest_v0.png)
 
 
 ### C. Adjusting Parameters with Hydra (Avoid hard-coding)
@@ -446,6 +477,10 @@ The pipeline records its outputs in three main places:
   - **Registered Model Name:** `nyc_airbnb_random_forest`
   - **Versions:** automatically incremented with each registration; lifecycle stages move from `None` → `Staging` → `Production`
 
+**Pipeline Lineage (W&B Graph View)**
+Here is the pipeline lineage visualization from W&B, showing all steps connected end-to-end.
+![W&B lineage graph — random_forest_model v0](images/wandb_lineage_random_forest_v0.png)
+
 
 ### H. Weekly Retraining with New Data and Built-In Failure Recovery
 
@@ -487,7 +522,7 @@ My Rubric project requirement checks:
 - **Test set evaluation** — The default thresholds are R² ≥ 0.50 and MAE ≤ 40.0 (set as command-line arguments when running the evaluation).
 - **Model registration and lifecycle management** — The `register_model` step and MLflow commands handle transitions between Staging and Production.
 - **Reproducible predictions** — Achieved by running `mlflow models predict --env-manager conda` with the registered Production model.
-- **Release tracking** — Outputs are stored in W&B, MLflow’s tracking/registry, and the local `outputs/` folder for hand-off.
+- **Release tracking** — Outputs are stored in W&B, MLflow’s tracking/registry, and the local `outputs/` folder for hand-off. W&B runs and artifacts are logged under the project nyc_airbnb (see link above).
 - **Scheduled retraining with safety checks** — The same pipeline supports weekly updates with a pass/fail gate and targeted recovery steps.
 
 
