@@ -57,7 +57,7 @@ def go(input_artifact: str,
 
     # --- Force W&B entity/project from environment ---
     WANDB_ENTITY = os.getenv("WANDB_ENTITY", "dgrish1-western-governors-university")
-    WANDB_PROJECT = os.getenv("WANDB_PROJECT", "nyc_airbnb_public")
+    WANDB_PROJECT = os.getenv("WANDB_PROJECT", "nyc_airbnb")
     WANDB_RUN_GROUP = os.getenv("WANDB_RUN_GROUP", "development")
 
     run = wandb.init(

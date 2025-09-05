@@ -39,20 +39,20 @@ def go(args):
         logger.info(f"[DEBUG] Training run_id: {current_run_id}")
         mlflow.log_param("trained_model_run_id", current_run_id)
 
-        # ✅ Always save outputs in the *project root*/outputs folder
+        # Always save outputs in the *project root*/outputs folder
         project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
         project_root_outputs = os.path.join(project_root, "outputs")
         os.makedirs(project_root_outputs, exist_ok=True)
         logger.info(f"[DEBUG] Using outputs directory: {project_root_outputs}")
 
-        # ✅ Save params.json for register_model with trace logging
+        # Save params.json for register_model with trace logging
         params_path = os.path.join(project_root_outputs, "params.json")
         with open(params_path, "w") as f:
             json.dump({"trained_model_run_id": current_run_id}, f)
         logger.info(f"[DEBUG][WRITE] params.json written by train_random_forest/run.py "
                     f"at {datetime.now().isoformat()} to {params_path}")
 
-        # ✅ Save rf_config.json for consistency with trace logging
+        # Save rf_config.json for consistency with trace logging
         rf_config_path = os.path.join(project_root_outputs, "rf_config.json")
         with open(rf_config_path, "w") as f:
             json.dump(rf_config, f)
@@ -89,7 +89,7 @@ def go(args):
         mlflow.log_metric("r2", r_squared)
         mlflow.log_metric("mae", mae)
 
-        # ✅ Save model inside MLflow's run artifacts directory
+        # Save model inside MLflow's run artifacts directory
         mlflow_model_subdir = f"random_forest_model_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         mlflow_model_path = os.path.join(mlflow.get_artifact_uri(), mlflow_model_subdir)
 
@@ -104,14 +104,14 @@ def go(args):
         )
         logger.info(f"[DEBUG] Saved model to MLflow artifacts dir: {mlflow_model_path}")
 
-        # ✅ W&B logging with correct path
+        # W&B logging
         artifact = wandb.Artifact(
             args.output_artifact,
             type='model_export',
             description='Trained random forest artifact',
             metadata=rf_config
         )
-        artifact.add_dir(mlflow_model_path)  # ✅ Corrected this line
+        artifact.add_dir(mlflow_model_path)  
         run.log_artifact(artifact)
 
         fig_feat_imp = plot_feature_importance(sk_pipe, processed_features)

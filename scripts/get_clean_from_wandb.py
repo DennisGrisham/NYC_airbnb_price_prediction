@@ -12,5 +12,5 @@ if not candidates:
 if not candidates:
     raise RuntimeError(f"Couldn't find clean_sample.csv inside {local_dir}")
 shutil.copyfile(candidates[0], os.path.join(dst, "clean_sample.csv"))
-print("✅ Materialized outputs/clean_sample.csv from W&B artifact")
+print("Materialized outputs/clean_sample.csv from W&B artifact")
 run.finish()

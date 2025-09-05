@@ -7,4 +7,4 @@ art2 = wandb.Artifact("test_data.csv", type="split_data", description="Test spli
 art2.add_file(os.path.join("outputs","test_data.csv"))
 run.log_artifact(art2)
 run.finish()
-print("✅ Logged train_data.csv and test_data.csv as W&B artifacts")
+print("Logged train_data.csv and test_data.csv as W&B artifacts")

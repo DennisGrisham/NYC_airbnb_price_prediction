@@ -9,9 +9,9 @@ from mlflow.tracking import MlflowClient
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-@hydra.main(config_path="../../", config_name="config")
+@hydra.main(version_base=None, config_path="../../", config_name="config")
 def go(config: DictConfig):
-    logger.info("🚀 Starting register_model step...")
+    logger.info("Starting register_model step...")
 
     # Determine project root
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -20,8 +20,8 @@ def go(config: DictConfig):
     logger.info(f"[DEBUG] Looking for outputs directory at: {outputs_dir}")
 
     if not os.path.exists(outputs_dir):
-        logger.error(f"❌ Outputs directory not found at {outputs_dir}")
-        logger.info("🔍 Dumping top-level tree of project root for inspection:")
+        logger.error(f"Outputs directory not found at {outputs_dir}")
+        logger.info("Dumping top-level tree of project root for inspection:")
         for root, dirs, files in os.walk(project_root):
             logger.info(f"DIR: {root}")
             for f in files:
@@ -32,18 +32,18 @@ def go(config: DictConfig):
     logger.info(f"[DEBUG] Expecting params.json at: {params_path}")
 
     if os.path.exists(params_path):
-        logger.info("✅ Found params.json! Printing contents:")
+        logger.info("Found params.json! Printing contents:")
         with open(params_path, "r") as f:
             logger.info(f.read())
     else:
-        logger.error("❌ params.json NOT FOUND. Dumping outputs directory contents:")
+        logger.error("params.json NOT FOUND. Dumping outputs directory contents:")
         for item in os.listdir(outputs_dir):
             logger.info(f"  {item}")
         return
 
     rf_config_path = os.path.join(outputs_dir, "rf_config.json")
     if not os.path.exists(rf_config_path):
-        logger.error(f"❌ rf_config.json not found at {rf_config_path}")
+        logger.error(f"rf_config.json not found at {rf_config_path}")
         return
 
     # Load params
@@ -51,7 +51,7 @@ def go(config: DictConfig):
         trained_model_run_id = json.load(f).get("trained_model_run_id")
 
     if not trained_model_run_id:
-        logger.error("❌ trained_model_run_id missing in params.json.")
+        logger.error("trained_model_run_id missing in params.json.")
         return
 
     logger.info(f"[DEBUG] Using trained_model_run_id: {trained_model_run_id}")
@@ -65,7 +65,7 @@ def go(config: DictConfig):
         if versions:
             latest_version = max(versions, key=lambda v: int(v.version))
             if latest_version.run_id == trained_model_run_id:
-                logger.info("⏩ Skipped — same run ID as latest version")
+                logger.info("Skipped — same run ID as latest version")
                 return
     except Exception as e:
         logger.warning(f"Could not fetch latest model version info: {e}")
@@ -74,7 +74,7 @@ def go(config: DictConfig):
     artifacts = client.list_artifacts(trained_model_run_id)
     model_folder_candidates = [a.path for a in artifacts if a.path.startswith("random_forest_model_")]
     if not model_folder_candidates:
-        logger.error("❌ No model artifact folder found for run.")
+        logger.error("No model artifact folder found for run.")
         return
 
     model_folder = model_folder_candidates[0]
@@ -87,7 +87,7 @@ def go(config: DictConfig):
         pass
 
     result = client.create_model_version(name=model_name, source=model_uri, run_id=trained_model_run_id)
-    logger.info(f"✅ Registered new model version: {result.version}")
+    logger.info(f"Registered new model version: {result.version}")
 
     # NEW: emit model uri to file + stdout so downstream steps can read it
     try:
@@ -103,7 +103,7 @@ def go(config: DictConfig):
         out_json = os.path.join(outputs_dir, "last_registered_model.json")
         with open(out_json, "w") as f:
             json.dump(payload, f, indent=2)
-        logger.info(f"📝 Wrote {out_json}")
+        logger.info(f"Wrote {out_json}")
         # Also print a simple line parser-friendly:
         print(f"MODEL_URI={model_uri_registry}")
     except Exception as e:

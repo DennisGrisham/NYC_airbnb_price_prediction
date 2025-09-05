@@ -28,7 +28,7 @@ def main():
     args = p.parse_args()
 
     if not os.path.exists(args.test_csv):
-        print(f"❌ Test CSV not found: {args.test_csv}", file=sys.stderr)
+        print(f"Test CSV not found: {args.test_csv}", file=sys.stderr)
         sys.exit(2)
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -45,7 +45,7 @@ def main():
         res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
         print(res.stdout)
         if res.returncode != 0 or not os.path.exists(preds_path):
-            print("❌ Failed to generate predictions with mlflow models predict.", file=sys.stderr)
+            print("Failed to generate predictions with mlflow models predict.", file=sys.stderr)
             sys.exit(3)
 
         # Load truth/preds (mlflow may write JSON or CSV depending on version)
@@ -65,7 +65,7 @@ def main():
                 # Single unnamed column -> treat as predictions
                 y_pred = df_pred.iloc[:, 0].to_numpy()
             else:
-                print(f"❌ 'predictions' column not found in {preds_path}. Got cols: {list(df_pred.columns)}", file=sys.stderr)
+                print(f"'predictions' column not found in {preds_path}. Got cols: {list(df_pred.columns)}", file=sys.stderr)
                 sys.exit(4)
 
         # If MLflow returned shape (n, 1), squeeze to (n,)
@@ -79,16 +79,16 @@ def main():
 
         ok = True
         if r2 < args.min_r2:
-            print(f"❌ Gate failed: R2 {r2:.3f} < {args.min_r2:.3f}", file=sys.stderr)
+            print(f"Gate failed: R2 {r2:.3f} < {args.min_r2:.3f}", file=sys.stderr)
             ok = False
         if m > args.max_mae:
-            print(f"❌ Gate failed: MAE {m:.2f} > {args.max_mae:.2f}", file=sys.stderr)
+            print(f"Gate failed: MAE {m:.2f} > {args.max_mae:.2f}", file=sys.stderr)
             ok = False
 
         os.makedirs("outputs", exist_ok=True)
         with open("outputs/eval_metrics.json", "w") as f:
             json.dump({"r2": float(r2), "mae": float(m), "min_r2_gate": float(args.min_r2), "max_mae_gate": float(args.max_mae)}, f, indent=2)
-        print("✅ Wrote outputs/eval_metrics.json")
+        print("Wrote outputs/eval_metrics.json")
 
         sys.exit(0 if ok else 1)
 

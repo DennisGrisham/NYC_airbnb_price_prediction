@@ -17,3 +17,9 @@ __pycache__/
 # === Large model artifacts ===
 *.joblib
 random_forest_dir/
+
+# Ignore MLflow/W&B/Hydra anywhere
+**/wandb/
+**/mlruns/
+**/.hydra/
+**/artifacts/

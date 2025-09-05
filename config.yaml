@@ -1,6 +1,6 @@
 main:
   components_repository: "https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter.git#components"
-  project_name: nyc_airbnb_public
+  project_name: nyc_airbnb
   experiment_name: development
   steps: all
   random_seed: 42
@@ -61,7 +61,7 @@ register_model:
 
 wandb:
   entity: dgrish1-western-governors-university
-  project: nyc_airbnb_public
+  project: nyc_airbnb
 
 hydra:
   run:
