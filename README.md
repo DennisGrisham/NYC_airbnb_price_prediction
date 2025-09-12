@@ -167,7 +167,7 @@ where `config['main']['components_repository']` is set to
 You can see the parameters that they require by looking into their `MLproject` file:
 
 - `get_data`: downloads the data. [MLproject](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/blob/main/components/get_data/MLproject)
-- `train_val_test_split`: segrgate the data (splits the data) [MLproject](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/blob/main/components/train_val_test_split/MLproject)
+- `train_val_test_split`: segregate the data (splits the data) [MLproject](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter/blob/main/components/train_val_test_split/MLproject)
 
 ## In case of errors
 
@@ -403,7 +403,7 @@ y_loaded_pred = loaded_model.predict(X_test)
 print("Predictions shape:", y_loaded_pred.shape)
 ```
 
-> If a local model file is not available, or if version mismatches occur, use the **Registered Production Model** method in E.1 to ensure reproducibility.
+If a local model file is not available, or if version mismatches occur, use the **Registered Production Model** method in E.1 to ensure reproducibility.
 
 
 ### F. Promoting a Model in the MLflow Model Registry
@@ -476,11 +476,7 @@ The pipeline records its outputs in three main places:
 - **MLflow Tracking / Model Registry**
   - **Registered Model Name:** `nyc_airbnb_random_forest`
   - **Versions:** automatically incremented with each registration; lifecycle stages move from `None` → `Staging` → `Production`
-
-**Pipeline Lineage (W&B Graph View)**
-Here is the pipeline lineage visualization from W&B, showing all steps connected end-to-end.
-![W&B lineage graph — random_forest_model v0](images/wandb_lineage_random_forest_v0.png)
-
+  
 
 ### H. Weekly Retraining with New Data and Built-In Failure Recovery
 
@@ -539,4 +535,3 @@ My Rubric project requirement checks:
 - v1.0.0 run on `sample2.csv` **failed** at `data_check` (`test_proper_boundaries`), demonstrating the data issue.
 - Implemented NYC bounding box filtering in `src/basic_cleaning/run.py`.
 - Released **v1.0.1** and re-ran on `sample2.csv`: `data_check` **passed**, model trained and **registered as version 2**, gates **passed** (R² ≈ 0.57, MAE ≈ 33.6).
-
