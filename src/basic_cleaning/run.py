@@ -1,107 +1,94 @@
 import argparse
 import os
+import tempfile
 import pandas as pd
 import wandb
-from typing import Tuple
 
 
-def _clean(df: pd.DataFrame, min_price: float, max_price: float) -> pd.DataFrame:
-    """
-    Basic cleaning for the initial release (no NYC bounds yet).
+def parse_args():
+    parser = argparse.ArgumentParser(description="Basic data cleaning with NYC bounding box filter")
 
-    - Filter rows with price in [min_price, max_price]
-    - Convert last_review to datetime (kept for model/pipeline consistency)
-    - Do NOT filter lat/long yet (we add later per rubric)
-    """
-    df = df.copy()
-    # Filter price bounds
-    idx = df["price"].between(min_price, max_price)
-    df = df.loc[idx].copy()
+    parser.add_argument("--input_artifact", type=str, required=True,
+                        help="Name:version for the raw CSV artifact from W&B (e.g. sample.csv:latest)")
+    parser.add_argument("--output_artifact", type=str, required=True,
+                        help="Name of the cleaned CSV artifact to log to W&B (e.g. clean_sample.csv)")
+    parser.add_argument("--output_type", type=str, required=True, help="Artifact type (e.g. clean_data)")
+    parser.add_argument("--output_description", type=str, required=True, help="Artifact description")
 
-    # Convert last_review to datetime (ok if NaT)
-    if "last_review" in df.columns:
-        df["last_review"] = pd.to_datetime(df["last_review"], errors="coerce")
+    parser.add_argument("--min_price", type=float, required=True, help="Minimum allowed price")
+    parser.add_argument("--max_price", type=float, required=True, help="Maximum allowed price")
 
-    return df
+    return parser.parse_args()
 
 
-def go(input_artifact: str,
-       output_artifact: str,
-       output_type: str,
-       output_description: str,
-       min_price: float,
-       max_price: float) -> Tuple[str, int]:
-    """
-    Download input CSV from W&B, clean, save locally, and log to W&B.
+def main():
+    args = parse_args()
 
-    Parameters
-    ----------
-    input_artifact : str
-        W&B artifact spec for the raw/sample CSV (e.g., "sample.csv:latest")
-    output_artifact : str
-        Name for the cleaned CSV artifact to create (e.g., "clean_sample.csv")
-    output_type : str
-        Artifact type (e.g., "clean_data")
-    output_description : str
-        Short description for the artifact
-    min_price : float
-        Minimum allowed price
-    max_price : float
-        Maximum allowed price
+    run = wandb.init(job_type="basic_cleaning")
+    run.config.update(vars(args))
 
-    Returns
-    -------
-    Tuple[str, int]
-        (path_to_local_csv, n_rows)
-    """
+    # 1) Download the raw CSV artifact from W&B
+    artifact_path = run.use_artifact(args.input_artifact).download()
+    raw_csv = None
+    for fname in os.listdir(artifact_path):
+        if fname.endswith(".csv"):
+            raw_csv = os.path.join(artifact_path, fname)
+            break
+    if raw_csv is None:
+        raise FileNotFoundError("No .csv file found inside the input_artifact")
 
-    # --- Force W&B entity/project from environment ---
-    WANDB_ENTITY = os.getenv("WANDB_ENTITY", "dgrish1-western-governors-university")
-    WANDB_PROJECT = os.getenv("WANDB_PROJECT", "nyc_airbnb")
-    WANDB_RUN_GROUP = os.getenv("WANDB_RUN_GROUP", "development")
+    df = pd.read_csv(raw_csv)
+    n0 = len(df)
 
-    run = wandb.init(
-        entity=WANDB_ENTITY,
-        project=WANDB_PROJECT,
-        group=WANDB_RUN_GROUP,
-        job_type="basic_cleaning",
-        save_code=True
-    )
+    # 2) Price filtering
+    df = df[df["price"].between(args.min_price, args.max_price)]
+    n1 = len(df)
 
-    # Download and read input CSV from W&B
-    input_path = run.use_artifact(input_artifact).file()
-    df = pd.read_csv(input_path)
+    # 3) NYC bounding box filtering (the new step required by the rubric)
+    #    Typical bounding box used in this project:
+    #    longitude in [-74.25, -73.50], latitude in [40.5, 41.0]
+    MIN_LON, MAX_LON = -74.25, -73.50
+    MIN_LAT, MAX_LAT = 40.50, 41.00
 
-    # Clean
-    cleaned = _clean(df, min_price=min_price, max_price=max_price)
+    # Only filter if columns exist (defensive)
+    if {"longitude", "latitude"}.issubset(df.columns):
+        in_bbox = df["longitude"].between(MIN_LON, MAX_LON) & df["latitude"].between(MIN_LAT, MAX_LAT)
+        df = df[in_bbox]
+    else:
+        raise ValueError("Expected 'longitude' and 'latitude' columns to apply NYC bounding-box cleaning.")
 
-    # Save locally for downstream steps
+    n2 = len(df)
+
+    # 4) Save cleaned file locally
     os.makedirs("outputs", exist_ok=True)
-    local_csv = os.path.join("outputs", "clean_sample.csv")
-    cleaned.to_csv(local_csv, index=False)
+    cleaned_path = os.path.join("outputs", args.output_artifact)
+    df.to_csv(cleaned_path, index=False)
 
-    # Log cleaned CSV as a W&B artifact
-    art = wandb.Artifact(output_artifact, type=output_type, description=output_description)
-    art.add_file(local_csv)
-    run.log_artifact(art)
+    # 5) Log cleaned dataset as a W&B artifact
+    artifact = wandb.Artifact(
+        name=args.output_artifact,
+        type=args.output_type,
+        description=args.output_description,
+        metadata={
+            "rows_raw": n0,
+            "rows_price_filtered": n1,
+            "rows_bbox_filtered": n2,
+            "nyc_bbox": {
+                "lon": [MIN_LON, MAX_LON],
+                "lat": [MIN_LAT, MAX_LAT],
+            },
+            "min_price": args.min_price,
+            "max_price": args.max_price,
+        },
+    )
+    artifact.add_file(cleaned_path)
+    run.log_artifact(artifact)
     run.finish()
 
-    return local_csv, len(cleaned)
+    print(f"[basic_cleaning] Rows: raw={n0}, after_price={n1}, after_bbox={n2}")
+    print(f"[basic_cleaning] Wrote cleaned CSV to: {cleaned_path}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input_artifact", type=str, required=True, help="e.g. 'sample.csv:latest'")
-    parser.add_argument("--output_artifact", type=str, required=True, help="e.g. 'clean_sample.csv'")
-    parser.add_argument("--output_type", type=str, required=True, help="e.g. 'clean_data'")
-    parser.add_argument("--output_description", type=str, required=True, help="Description for the cleaned artifact")
-    parser.add_argument("--min_price", type=float, required=True, help="Minimum allowed price")
-    parser.add_argument("--max_price", type=float, required=True, help="Maximum allowed price")
-    args = parser.parse_args()
+    main()
 
-    go(args.input_artifact,
-       args.output_artifact,
-       args.output_type,
-       args.output_description,
-       args.min_price,
-       args.max_price)
