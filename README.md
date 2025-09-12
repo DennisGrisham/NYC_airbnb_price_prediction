@@ -532,3 +532,11 @@ My Rubric project requirement checks:
 - **Missing W&B artifacts** — Confirm that you are logged in with `wandb login` and that both `WANDB_ENTITY` and `WANDB_PROJECT` environment variables are set correctly.
 - **Conda environment issues** — If old `mlflow-*` environments are causing problems, remove them to start fresh. Instructions are in the “In case of errors” section higher up in this document.
 - **Evaluation gate failures** — When the model fails the R² or MAE thresholds, review `eval_metrics.json` and your MLflow/W&B run details. Adjust parameters under `modeling.random_forest.*` and retrain starting from the `train_random_forest` step.
+
+
+### Weekly Data Run — v1.0.0 → v1.0.1 (Rubric Check)
+
+- v1.0.0 run on `sample2.csv` **failed** at `data_check` (`test_proper_boundaries`), demonstrating the data issue.
+- Implemented NYC bounding box filtering in `src/basic_cleaning/run.py`.
+- Released **v1.0.1** and re-ran on `sample2.csv`: `data_check` **passed**, model trained and **registered as version 2**, gates **passed** (R² ≈ 0.57, MAE ≈ 33.6).
+
