@@ -82,6 +82,13 @@ This project logs all pipeline runs to Weights & Biases under the following proj
 > Note: Due to organization account settings, this project is currently Team-visible.
 
 
+### GitHub Repository
+
+This repository contains all pipeline code, configuration, and releases:
+
+- GitHub Repo: [https://github.com/DennisGrisham/NYC_airbnb_price_prediction](https://github.com/DennisGrisham/NYC_airbnb_price_prediction)
+
+
 ### The configuration
 As usual, the parameters controlling the pipeline are defined in the ``config.yaml`` file defined in
 the root of the starter kit. We will use Hydra to manage this configuration file. 
